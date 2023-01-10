@@ -1,0 +1,102 @@
+/* Reset CSS*/
+* { padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+html {font-family: Arial, sans-serif;}
+/* Làm từ ngoài vào trong
+   Từ trên xuống dưới
+   Tổng quan đến chi tiết
+1. vị trí
+2. màu sắc
+3. kiểu dáng(chữ)
+4. Màu sắc
+ */
+#main {
+
+}
+
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    left:0px;
+    right: 0px;
+}
+#nav    {display: inline-block;
+}
+#nav,.subnav {
+    list-style-type: none;
+}
+#nav li {
+
+    position: relative;
+}
+#nav > li {
+    display: inline-block;
+}
+#nav > li >a {
+    color: azure;
+    text-transform: uppercase;
+}
+
+#nav li a { line-height: 46px;
+
+    text-decoration: none;
+    padding: 0 24px;
+    display: block;
+}
+#nav li:hover .subnav {
+    display: block;
+}
+#nav .subnav li:hover a,
+#nav> li:hover> a {
+    color: black;
+    background-color: #ccc;
+    display: block;
+}
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow:0 0 10px rgba(0,0,0,.3);
+    min-width: 160px;
+}
+
+
+#nav .subnav a{
+    color: black;
+    padding: 12px;
+    line-height: 38px;
+}
+#slider {
+    margin-top: 46px;
+    padding-top: 60%;
+    background: url('/asset/img/shop.jfif') top center /cover no-repeat;
+    /*background-color: grey;*/
+
+}
+
+#nav .nav-arrow-down { font-size: 12px}
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+
+}
+#header .search-icon {
+    color: white;
+    font-size: 20px;
+    line-height: 46px;
+
+}
+#header .search-btn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+#content {
+}
+#footer {
+
+}
