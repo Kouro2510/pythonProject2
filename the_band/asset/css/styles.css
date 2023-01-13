@@ -158,7 +158,8 @@ html {
     line-height: 46px;
     top: 30%;
     left: 8%;
-    cursor: pointer
+    cursor: pointer;
+
 }
 
 #slider .insta-icon {
@@ -321,6 +322,9 @@ html {
  }
 
 #footer {
+    border: 1px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    background-color:rgba(0, 0 , 0 ,.1) ;
     display: flex;
     alignment: center;
     font-family: "Segoe UI", sans-serif;
@@ -329,7 +333,7 @@ html {
     /*position: absolute;*/
 }
 
-}
+
 .contact-info h3 {
     margin: 15px 0;
     font-size: 24px;
