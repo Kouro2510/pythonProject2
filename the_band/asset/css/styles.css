@@ -91,11 +91,12 @@ html {
     margin-top: 46px;
     padding-top: 50%;
     background: url('../img/fashion.jpg') top center /cover no-repeat;
+
     /*position: relative;*/
     /*background-color: grey;*/
 }
 
-#slider .section-into-text {
+#slider .section-into-text {background-color: rgba(0, 0 , 0 ,.5);
     padding: 40px;
     position: absolute;
     top: 10%;
@@ -181,6 +182,17 @@ html {
     left: 12%;
     cursor: pointer
 }
+#footer .contact .mail-icon {
+    position: absolute;
+    display: inline-block;
+    color: blue;
+
+    line-height: 46px;
+    top: 30%;
+    left: 10%;
+}
+
+
 #slider .text-heading {position: absolute;
     bottom: 47px;
     color: white;
@@ -214,8 +226,7 @@ html {
 }
 
 #content {
-    position: absolute;
-    padding-top: 64px;
+
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
@@ -241,19 +252,17 @@ html {
 
 #content .New .Styles {
     display: flex;
-    margin-left: 30%;
-
-
+    margin-left: 20%;
 }
 
 #content .New .style-2 img {
     width: 40vh;
     margin-left: 20%;
     height: 36vh;
-
 }
 
 .items {
+
     position: relative;
 
 }
@@ -282,21 +291,18 @@ html {
 }
 
 #content .New-Arival .New-Product  {
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    /*align-items: center;*/
-    /*gap: 30px;*/
-    /*grid-row-gap: 60px;*/
-    /*margin: 0 100px;*/
-    /*overflow: hidden;*/
-    margin-top: 48px ;
-    transform:translateX(50%);
-
+    align-items: center;
+    gap: 30px;
+    grid-row-gap: 60px;
+    margin: 50px 100px;
+    overflow: hidden;
 }
  .New-Product .items {
      float: left;
-     width: calc(100%/3);
+
      text-align: center;
      align-items: center;
  }
@@ -307,16 +313,134 @@ html {
      margin: 15px;
      width: 200px;
      vertical-align: middle;
-
  }
+ .New-Product .items .clothes-img:hover  {
+     opacity: .5 ;
+     color: black;
+     cursor: pointer;
+ }
+
 #footer {
+    display: flex;
+    alignment: center;
     font-family: "Segoe UI", sans-serif;
-    margin: 10px 0;
+    /*margin: 10px 10px;*/
     bottom: auto;
-    position: absolute;
+    /*position: absolute;*/
+}
+
+}
+.contact-info h3 {
+    margin: 15px 0;
+    font-size: 24px;
 }
 #footer .contact-head h3 {
     font-size: 24px;
     display: block;
-    margin-block-start: 1em;
+
+    /*margin-block-start: 1em;*/
 }
+.contact-info p {
+    width: 300px;
+}
+.contact-info {
+        width:300px;
+
+        padding: 30px 15px;
+        border-radius: 10px;
+}
+ .message h3{
+    width: 300px;
+
+    padding: 30px 15px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+.contact-info .phone-number h4 {
+    width: 300px;
+
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+.contact-info {
+    transform: translateX(150%);
+}
+
+
+.form-control {margin: 10px; background: white; color: black }
+.modal { position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        }
+.modal.open {display: flex}
+.modal-header { background: #009688;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center; font-size: 30px; color: #fff;
+}
+.modal-container {
+    background: blue;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+}
+.modal .modal-heading-icon {
+    margin-right: 16px;
+    ;
+}
+/*.modal-close:hover {*/
+/*    opacity: 1;*/
+/*}*/
+.modal-close {position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    opacity: .9;
+}
+
+
+.modal-body {
+    background: white;
+    padding: 0 16px;
+}
+.modal-lab {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+    padding-top: 10px;
+}
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 24px;
+}
+.modal-footer {background: white;
+    padding: 16px;
+    text-align: right;
+}
+#cast-out {
+    background:#009688;
+    border: none;
+    color: white;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 12px;
+}
+#cast-out:hover{
+    opacity: .9;
+}
+
+
+
