@@ -8,47 +8,211 @@
     <title>Document</title>
     <link rel="stylesheet" href="./asset/css/styles.css">
     <link rel="stylesheet" href="./asset/font/themify-icons-master/themify-icons-master/css/themify-icons.css">
+    <script src="asset/js/index.js"></script>
 </head>
 <body>
-    <div id="main">
-        <div id="header">
-            <!--Begin Nav-->
-            <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
-                <li>
-                    <a href="">More <i class =" nav-arrow-down ti-angle-down"></i></a>
-                    <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <!--End Nav-->
+<div id="modal" class="modal">
+    <div class="modal-container">
+        <div class="modal-close">
+           <span class="close"> <i class="ti-close"></i></span>
+        </div>
+        <header class="modal-header">
+            <i class="modal-heading-icon ti-user">Login</i>
+        </header>
+        <div class="modal-body">
+            <label for="quantities" class="modal-lab">
+
+                User name
+            </label>
+            <input id="quantities" type="text" class="modal-input" placeholder="Enter your user name">
+        </div>
+        <div class="modal-body">
+            <label for="quantity" class="modal-lab">
+
+                Password
+            </label>
+            <input id="quantity" type="text" class="modal-input" placeholder="Enter your password ">
+
+            <button id="cast-out">
+                Login <i class="ti-check"></i>
+            </button>
+        </div>
+
+        <footer class="modal-footer">
+            <p class="modal-help"><a href="">Need Help</a></p>
+        </footer>
+    </div>
+</div>
+<link rel="stylesheet" href="./asset/font/themify-icons-master/themify-icons-master/css/themify-icons.css">
+<div id="main">
+    <div id="header">
+        <!--Begin Nav-->
+
+        <ul id="nav">
+            <li><a href="">Home</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Contact</a></li>
+            <li>
+                <a href="">More <i class=" nav-arrow-down ti-angle-down"></i></a>
+                <ul class="subnav">
+                    <li id="account"><a>Account</a></li>
+                    <li><a href="">Cart</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <!--End Nav-->
         <!--Begin search-->
-            <div class="search-btn">
-                <i class="search-icon ti-search"></i>
-            </div>
+        <div class="search-btn">
+            <i class="search-icon ti-search"></i>
+        </div>
         <!--End search-->
+    </div>
+
+    <div id="slider">
+        <div class="section-into-text">
+            <h1 class="slide-head">FASHION</h1>
+            <h2 class="contact">Follow us on Social Media</h2>
+            <p>"Fashion is part of the daily air and it changes all the time, with all the events. You can even see
+                the approaching of a revolution in clothes. You can see and feel everything in clothes."<br> —Diana
+                Vreeland</p>
+            <h3 class="New">New Product</h3>
         </div>
-
-        <div id="slider">
-        <div class="text-content"></div>
-            <h2 class="text-heading">Shopping</h2>
-            <div class="text-description"></div>
-        </div>
-
-        <div id="content">
-
-        </div>
-
-        <div id="footer">
-
+        <div class="social-media">
+            <i class="face-icon ti-facebook"></i>
+            <i class="insta-icon ti-instagram"></i>
+            <i class="twit-icon ti-twitter"></i>
         </div>
 
     </div>
+    <div id="content">
+        <div class="content-section">
+            <h2 class="section-heading">FIND OUT WHAT OPTIONS <br> YOU HAVE </h2>
+        </div>
+
+        <div class="New">
+            <div class="Styles">
+                <div>
+                    <div class="items">
+                        <p class="female">Women's Style</p>
+                        <img src="./asset/img/female-clothes.png" alt="Women's clothes" class="clothes-img"
+                             style="cursor: pointer">
+                    </div>
+                </div>
+                <div class="style-2">
+                    <div class="items">
+                        <p class="male">Men's Style</p>
+                        <img src="./asset/img/men's clothes.png" alt="Men's clothes" class="clothes-img"
+                             style="cursor: pointer">
+                    </div>
+                    <div class="items">
+                        <p class="male">Kid's Style</p>
+                        <img src="./asset/img/kid's clothes.png" alt="Kid's clothes" class="clothes-img"
+                             style="height: 285px; cursor: pointer">
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="content-section">
+                <h2 class="section-heading">GET OUR NEWLY ARRIVED PRODUCTS</h2>
+            </div>
+        </div>
+
+        <div class="New-Arival">
+            <div class="New-Product">
+                <div>
+                    <div class="items">
+
+                        <img src="./asset/img/woclothes.png" alt="Women's clothes" class="clothes-img">
+                        <p class="Clothes">8 items in store<br> gray | white | black <br> 12.00$ </p>
+                    </div>
+                </div>
+                <div class="items">
+
+                    <img src="./asset/img/woclothes.png" alt="Women's clothes" class="clothes-img">
+                    <p class="Clothes">8 items in store<br> gray | white | black <br> 12.00$ </p>
+                </div>
+                <div class="items">
+
+                    <img src="./asset/img/woclothes.png" alt="Women's clothes" class="clothes-img">
+                    <p class="Clothes">8 items in store<br> gray | white | black <br> 12.00$ </p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="contact" id="footer">
+        <div class="contact-info">
+            <h3 class="contact-head" style="transform: translateX(-50%); font-size: 24px">GET IN TOUCH</h3>
+            <h4 style="font-weight: 600; transform: translate(-50%);font-size: 20px">Your styles at low cost</h4>
+            <p style="transform: translate(-45%, 50%);">We care about our customer <br>Please contact if you have any
+                feedback</p>
+            <h4 style="font-weight: 600; transform: translate(-50%, 70%); font-size: 20px;margin-top: 10px;">Follow Us
+
+                <i class="face-icon ti-facebook" style="cursor: pointer; color: blue;"></i>
+                <i class="insta-icon ti-instagram" style="cursor: pointer; color: deeppink"></i>
+                <i class="twit-icon ti-twitter" style="cursor: pointer; color: blue"></i>
+            </h4>
+        </div>
+        <div class="contact-info">
+            <h3 class="message" style="font-weight: 600;font-size: 24px; transform: translateY(-20%)">OPENING HOURS</h3>
+            <p>Mon - Sat 7am - 9pm:</p>
+            <p>Opening on Morning | Off at afternoon</p>
+            <p>Delivery only on opening hours</p>
+
+            <br>
+            <div class="phone-number">
+                <h4 style="font-weight: 600;font-size: 24px">CONTACT INFO</h4>
+                <p><i class="fa ti-headphone " style="margin-right: 8px;font-size: 20px;"></i> 763-957-6781</p>
+                <p><i class="fa ti-headphone" style="margin-right: 8px;font-size: 20px;"></i>706-734-2591</p>
+                <label><i class="fa fa-envelope " style=" margin-right: 5px;font-size: 20px;"></i></label>
+                <i class="mail-icon ti-email" style="margin-right: 8px;font-size: 20px;"></i><input type="email" name=""
+                                                                                                    id=""
+                                                                                                    placeholder="Email"
+                                                                                                    class="form-control">
+                <input type="submit"
+                       style="margin-left:20px; background: #f44336; color: white; transform: translateX(28%); padding: 10px; border: none; cursor: pointer;"
+                       value="SubScribe">
+            </div>
+        </div>
+
+    </div>
+    <div class="w3-flat-midnight-blue w3-padding w3 w3-center w3-margin-top"
+         style="padding: 10px 16px; text-align:center; background: midnightblue; color: white">
+        <p>Powered by W3.css</p></div>
+</div>
 </body>
+<script>
+    // Get the modal
+    var modal = document.getElementById("modal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("account");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 </html>
